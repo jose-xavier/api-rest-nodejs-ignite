@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js"
+    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +17,14 @@
     "@types/node": "^18.16.2",
     "@types/typescript": "^2.0.0",
     "eslint": "^8.39.0",
+    "supertest": "^6.3.3",
     "tsx": "^3.12.6",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
   },
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
+    "@types/supertest": "^2.0.12",
     "dotenv": "^16.0.3",
     "fastify": "^4.16.0",
     "knex": "^2.4.2",
